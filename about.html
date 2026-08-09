@@ -1,179 +1,177 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-mono-chrome">
-    <title>신도림 룸싸롱 예약 정보 | 프리미엄 접대 서비스 안내</title>
-    <meta name="description" content="신도림 룸싸롱 예약 정보: 운영시간, 위치, 시설, 가격 정책 등 상세 안내. 24시간 연중무휴 예약 상담 010-6279-0862. 비즈니스 접대에 최적화된 프리미엄 공간.">
-    <meta name="keywords" content="신도림 룸싸롱, 신도림 룸싸롱 예약, 신도림 접대, 신도림 유흥 정보, 신도림 VIP룸 시설, 신도림 비즈니스룸 가격">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sindorim-room-review.namanavi.com/about.html">
-    <meta property="og:title" content="신도림 룸싸롱 예약 정보 | 프리미엄 접대 서비스 안내">
-    <meta property="og:description" content="신도림 룸싸롱 예약 정보: 운영시간, 위치, 시설, 가격 정책 등 상세 안내. 24시간 연중무휴 예약 상담 010-6279-0862. 비즈니스 접대에 최적화된 프리미엄 공간.">
-    <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: #1d1d1f; position: sticky; top: 0; z-index: 100; }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .logo { color: #fff; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.5px; }
-        .logo span { color: #ffd700; }
-        nav { display: flex; gap: 32px; align-items: center; }
-        nav a { color: #a1a1a6; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
-        nav a:hover { color: #fff; }
-        .nav-cta { background: #ffd700; color: #1d1d1f; padding: 8px 20px; border-radius: 20px; font-weight: 600; transition: all 0.3s; }
-        .nav-cta:hover { background: #fff; color: #1d1d1f; }
-        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-        .hamburger span { width: 24px; height: 2px; background: #fff; transition: 0.3s; }
-        .mobile-nav { display: none; }
-        @media (max-width: 768px) {
-            nav { display: none; }
-            .hamburger { display: flex; }
-            .mobile-nav { position: fixed; top: 64px; left: 0; width: 100%; background: #1d1d1f; flex-direction: column; padding: 20px; gap: 16px; z-index: 99; }
-            .mobile-nav a { color: #a1a1a6; text-decoration: none; font-size: 1rem; padding: 8px 0; }
-            .mobile-nav a.nav-cta { text-align: center; margin-top: 8px; }
-            .mobile-nav.active { display: flex; }
-        }
-        .info-section { padding: 80px 0; }
-        .info-section h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.5px; color: #1d1d1f; }
-        .info-section .subtitle { font-size: 1.1rem; color: #6e6e73; margin-bottom: 48px; line-height: 1.5; }
-        .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 64px; }
-        .info-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .info-card h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: #1d1d1f; }
-        .info-card p { color: #6e6e73; font-size: 0.95rem; line-height: 1.7; }
-        .info-card ul { list-style: none; margin-top: 12px; }
-        .info-card ul li { padding: 6px 0; color: #6e6e73; font-size: 0.95rem; position: relative; padding-left: 16px; }
-        .info-card ul li::before { content: '•'; position: absolute; left: 0; color: #ffd700; }
-        .info-card .highlight { color: #ffd700; font-weight: 600; }
-        .spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px; }
-        .spec-item { background: #fff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .spec-item .number { font-size: 2rem; font-weight: 700; color: #ffd700; margin-bottom: 8px; }
-        .spec-item .label { font-size: 0.9rem; color: #6e6e73; }
-        .cta-banner { background: #1d1d1f; border-radius: 16px; padding: 48px; text-align: center; color: #fff; }
-        .cta-banner h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; }
-        .cta-banner p { color: #a1a1a6; font-size: 1rem; margin-bottom: 24px; }
-        .cta-banner .tel-link { display: inline-block; background: #ffd700; color: #1d1d1f; padding: 16px 48px; border-radius: 40px; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: all 0.3s; }
-        .cta-banner .tel-link:hover { background: #fff; transform: scale(1.02); }
-        footer { background: #1d1d1f; color: #a1a1a6; padding: 32px 0; text-align: center; font-size: 0.85rem; }
-        footer a { color: #ffd700; text-decoration: none; }
-        @media (max-width: 768px) {
-            .info-grid { grid-template-columns: 1fr; }
-            .spec-grid { grid-template-columns: 1fr; }
-            .cta-banner { padding: 32px 20px; }
-            .cta-banner h2 { font-size: 1.4rem; }
-            .info-section h1 { font-size: 1.8rem; }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>신도림 룸싸롱 예약 정보 | 프리미엄 접대 서비스 안내</title>
+ <meta name="description" content="신도림 룸싸롱 예약 정보: 운영시간, 위치, 시설, 가격 정책 등 상세 안내. 비즈니스 접대에 최적화된 프리미엄 공간.">
+ <meta name="keywords" content="신도림 룸싸롱, 신도림 룸싸롱 예약, 신도림 접대, 신도림 유흥 정보, 신도림 VIP룸 시설, 신도림 비즈니스룸 가격">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://sindorim-room-review.namanavi.com/about.html">
+ <meta property="og:title" content="신도림 룸싸롱 예약 정보 | 프리미엄 접대 서비스 안내">
+ <meta property="og:description" content="신도림 룸싸롱 예약 정보: 운영시간, 위치, 시설, 가격 정책 등 상세 안내. 비즈니스 접대에 최적화된 프리미엄 공간.">
+ <style>
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { scroll-behavior: smooth; font-size: 16px; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+ header { background: #1d1d1f; position: sticky; top: 0; z-index: 100; }
+ .header-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+ .logo { color: #fff; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.5px; }
+ .logo span { color: #ffd700; }
+ nav { display: flex; gap: 32px; align-items: center; }
+ nav a { color: #a1a1a6; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+ nav a:hover { color: #fff; }
+ .nav-cta { background: #ffd700; color: #1d1d1f; padding: 8px 20px; border-radius: 20px; font-weight: 600; transition: all 0.3s; }
+ .nav-cta:hover { background: #fff; color: #1d1d1f; }
+ .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+ .hamburger span { width: 24px; height: 2px; background: #fff; transition: 0.3s; }
+ .mobile-nav { display: none; }
+ @media (max-width: 768px) {
+ nav { display: none; }
+ .hamburger { display: flex; }
+ .mobile-nav { position: fixed; top: 64px; left: 0; width: 100%; background: #1d1d1f; flex-direction: column; padding: 20px; gap: 16px; z-index: 99; }
+ .mobile-nav a { color: #a1a1a6; text-decoration: none; font-size: 1rem; padding: 8px 0; }
+ .mobile-nav a.nav-cta { text-align: center; margin-top: 8px; }
+ .mobile-nav.active { display: flex; }
+ }
+ .info-section { padding: 80px 0; }
+ .info-section h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.5px; color: #1d1d1f; }
+ .info-section .subtitle { font-size: 1.1rem; color: #6e6e73; margin-bottom: 48px; line-height: 1.5; }
+ .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 64px; }
+ .info-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+ .info-card h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: #1d1d1f; }
+ .info-card p { color: #6e6e73; font-size: 0.95rem; line-height: 1.7; }
+ .info-card ul { list-style: none; margin-top: 12px; }
+ .info-card ul li { padding: 6px 0; color: #6e6e73; font-size: 0.95rem; position: relative; padding-left: 16px; }
+ .info-card ul li::before { content: '•'; position: absolute; left: 0; color: #ffd700; }
+ .info-card .highlight { color: #ffd700; font-weight: 600; }
+ .spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px; }
+ .spec-item { background: #fff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+ .spec-item .number { font-size: 2rem; font-weight: 700; color: #ffd700; margin-bottom: 8px; }
+ .spec-item .label { font-size: 0.9rem; color: #6e6e73; }
+ .cta-banner { background: #1d1d1f; border-radius: 16px; padding: 48px; text-align: center; color: #fff; }
+ .cta-banner h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; }
+ .cta-banner p { color: #a1a1a6; font-size: 1rem; margin-bottom: 24px; }
+ .cta-banner .tel-link { display: inline-block; background: #ffd700; color: #1d1d1f; padding: 16px 48px; border-radius: 40px; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: all 0.3s; }
+ .cta-banner .tel-link:hover { background: #fff; transform: scale(1.02); }
+ footer { background: #1d1d1f; color: #a1a1a6; padding: 32px 0; text-align: center; font-size: 0.85rem; }
+ footer a { color: #ffd700; text-decoration: none; }
+ @media (max-width: 768px) {
+ .info-grid { grid-template-columns: 1fr; }
+ .spec-grid { grid-template-columns: 1fr; }
+ .cta-banner { padding: 32px 20px; }
+ .cta-banner h2 { font-size: 1.4rem; }
+ .info-section h1 { font-size: 1.8rem; }
+ }
+ </style>
   <meta property="og:url" content="https://sindorim-room-review.namanavi.com/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <div class="logo">신도림<span>룸싸롱</span></div>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/info">정보</a>
-                <a href="/facility">시설</a>
-                <a href="/reservation">예약</a>
-                <a href="/contact" class="nav-cta">문의</a>
-            </nav>
-            <div class="hamburger" onclick="toggleMobileNav()">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-        <div class="mobile-nav" id="mobileNav">
-            <a href="/">홈</a>
-            <a href="/info">정보</a>
-            <a href="/facility">시설</a>
-            <a href="/reservation">예약</a>
-            <a href="/contact" class="nav-cta">문의</a>
-        </div>
-    </header>
+ <header>
+ <div class="header-inner">
+ <div class="logo">신도림<span>룸싸롱</span></div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/facility">시설</a>
+ <a href="/reservation">예약</a>
+ <a href="/contact" class="nav-cta">문의</a>
+ </nav>
+ <div class="hamburger" onclick="toggleMobileNav()">
+ 
+ </div>
+ </div>
+ <div class="mobile-nav" id="mobileNav">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/facility">시설</a>
+ <a href="/reservation">예약</a>
+ <a href="/contact" class="nav-cta">문의</a>
+ </div>
+ </header>
 
-    <section class="info-section">
-        <div class="container">
-            <h1>신도림 룸싸롱 예약 정보</h1>
-            <p class="subtitle">비즈니스 접대와 VIP 프라이빗 라운지에 대한 모든 것. 24시간 연중무휴 예약 상담 라인을 운영하며, 신도림 역세권 최상의 서비스를 제공합니다.</p>
+ <section class="info-section">
+ <div class="container">
+ <h1>신도림 룸싸롱 예약 정보</h1>
+ <p class="subtitle">비즈니스 접대와 VIP 프라이빗 라운지에 대한 모든 것. 24시간 연중무휴 예약 상담 라인을 운영하며, 신도림 역세권 최상의 서비스를 제공합니다.</p>
 
-            <div class="info-grid">
-                <div class="info-card">
-                    <h2>운영 시간</h2>
-                    <p>365일 24시간 운영. 연중무휴로 프리미엄 접대 서비스를 제공합니다. 심야 및 공휴일에도 사전 예약 시 정상 운영되며, 비즈니스 일정에 최적화된 유연한 시간대를 지원합니다.</p>
-                    <ul>
-                        <li>평일/주말: <span class="highlight">24시간</span></li>
-                        <li>공휴일: <span class="highlight">정상 운영</span> (사전 예약 권장)</li>
-                        <li>마감 시간: <span class="highlight">별도 제한 없음</span> (예약 상황에 따라 조정)</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h2>위치 및 접근성</h2>
-                    <p>신도림역 도보 3분 거리, 역세권 최상의 입지 조건. 지하철 1호선과 2호선 환승역으로 접근성이 탁월하며, 주차장 완비로 차량 방문도 용이합니다. 인근 주요 호텔 및 비즈니스 센터와 근접.</p>
-                    <ul>
-                        <li>신도림역 <span class="highlight">도보 3분</span></li>
-                        <li>전용 <span class="highlight">주차장</span> 50대 수용 가능</li>
-                        <li>인근 호텔 셔틀 <span class="highlight">서비스 지원</span></li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h2>시설 사양</h2>
-                    <p>최상급 사운드 시스템과 조명 설비를 갖춘 프리미엄 라운지. 모든 룸은 방음 처리되어 완벽한 프라이버시를 보장하며, VIP 룸은 전용 엔트리와 별도 라운지 공간을 제공합니다.</p>
-                    <ul>
-                        <li>전체 <span class="highlight">12개</span> 프리미엄 룸</li>
-                        <li>VIP 룸 <span class="highlight">4개</span> (전용 라운지 포함)</li>
-                        <li>비즈니스 룸 <span class="highlight">8개</span> (회의 테이블 완비)</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h2>가격 정책</h2>
-                    <p>합리적인 가격대와 프리미엄 서비스의 균형. 패키지 상품 및 정기 이용 고객 대상 할인 제도 운영. 모든 가격은 사전 고지되며, 추가 요금 없이 투명하게 안내됩니다.</p>
-                    <ul>
-                        <li>기본 이용: <span class="highlight">시간당 30만원~</span></li>
-                        <li>VIP 패키지: <span class="highlight">4시간 150만원</span> (음료 포함)</li>
-                        <li>비즈니스 패키지: <span class="highlight">6시간 250만원</span> (안주+음료)</li>
-                    </ul>
-                </div>
-            </div>
+ <div class="info-grid">
+ <div class="info-card">
+ <h2>운영 시간</h2>
+ <p>365일 24시간 운영. 연중무휴로 프리미엄 접대 서비스를 제공합니다. 심야 및 공휴일에도 사전 예약 시 정상 운영되며, 비즈니스 일정에 최적화된 유연한 시간대를 지원합니다.</p>
+ <ul>
+ <li>평일/주말: <span class="highlight">24시간</span></li>
+ <li>공휴일: <span class="highlight">정상 운영</span> (사전 예약 권장)</li>
+ <li>마감 시간: <span class="highlight">별도 제한 없음</span> (예약 상황에 따라 조정)</li>
+ </ul>
+ </div>
+ <div class="info-card">
+ <h2>위치 및 접근성</h2>
+ <p>신도림역 도보 3분 거리, 역세권 최상의 입지 조건. 지하철 1호선과 2호선 환승역으로 접근성이 탁월하며, 주차장 완비로 차량 방문도 용이합니다. 인근 주요 호텔 및 비즈니스 센터와 근접.</p>
+ <ul>
+ <li>신도림역 <span class="highlight">도보 3분</span></li>
+ <li>전용 <span class="highlight">주차장</span> 50대 수용 가능</li>
+ <li>인근 호텔 셔틀 <span class="highlight">서비스 지원</span></li>
+ </ul>
+ </div>
+ <div class="info-card">
+ <h2>시설 사양</h2>
+ <p>최상급 사운드 시스템과 조명 설비를 갖춘 프리미엄 라운지. 모든 룸은 방음 처리되어 완벽한 프라이버시를 보장하며, VIP 룸은 전용 엔트리와 별도 라운지 공간을 제공합니다.</p>
+ <ul>
+ <li>전체 <span class="highlight">12개</span> 프리미엄 룸</li>
+ <li>VIP 룸 <span class="highlight">4개</span> (전용 라운지 포함)</li>
+ <li>비즈니스 룸 <span class="highlight">8개</span> (회의 테이블 완비)</li>
+ </ul>
+ </div>
+ <div class="info-card">
+ <h2>가격 정책</h2>
+ <p>합리적인 가격대와 프리미엄 서비스의 균형. 패키지 상품 및 정기 이용 고객 대상 할인 제도 운영. 모든 가격은 사전 고지되며, 추가 요금 없이 투명하게 안내됩니다.</p>
+ <ul>
+ <li>기본 이용: <span class="highlight">시간당 30만원~</span></li>
+ <li>VIP 패키지: <span class="highlight">4시간 150만원</span> (음료 포함)</li>
+ <li>비즈니스 패키지: <span class="highlight">6시간 250만원</span> (안주+음료)</li>
+ </ul>
+ </div>
+ </div>
 
-            <div class="spec-grid">
-                <div class="spec-item">
-                    <div class="number">12+</div>
-                    <div class="label">프리미엄 룸</div>
-                </div>
-                <div class="spec-item">
-                    <div class="number">24/7</div>
-                    <div class="label">연중무휴 운영</div>
-                </div>
-                <div class="spec-item">
-                    <div class="number">3분</div>
-                    <div class="label">신도림역 도보</div>
-                </div>
-            </div>
+ <div class="spec-grid">
+ <div class="spec-item">
+ <div class="number">12+</div>
+ <div class="label">프리미엄 룸</div>
+ </div>
+ <div class="spec-item">
+ <div class="number">24/7</div>
+ <div class="label">연중무휴 운영</div>
+ </div>
+ <div class="spec-item">
+ <div class="number">3분</div>
+ <div class="label">신도림역 도보</div>
+ </div>
+ </div>
 
-            <div class="cta-banner">
-                <h2>지금 바로 예약 상담</h2>
-                <p>전문 상담원이 24시간 대기 중입니다. 비즈니스 접대부터 VIP 프라이빗 모임까지, 완벽한 서비스를 제공합니다.</p>
-                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
-            </div>
-        </div>
-    </section>
+ <div class="cta-banner">
+ <h2>지금 바로 예약 상담</h2>
+ <p>전문 상담원이 24시간 대기 중입니다. 비즈니스 접대부터 VIP 프라이빗 모임까지, 완벽한 서비스를 제공합니다.</p>
+ 
+ </div>
+ </div>
+ </section>
 
-    <footer>
-        <div class="container">
-            <p>신도림 룸싸롱 예약 | 프리미엄 비즈니스 접대 No.1 | 24시간 연중무휴 예약 상담 <a href="tel:010-6279-0862">010-6279-0862</a></p>
-            <p style="margin-top: 8px;">© 2025 신도림 룸싸롱. All rights reserved.</p>
-        </div>
-    </footer>
+ <footer>
+ <div class="container">
+ <p>신도림 룸싸롱 예약 | 프리미엄 비즈니스 접대 No.1 | 24시간 연중무휴 예약 상담 </p>
+ <p style="margin-top: 8px;">© 2025 신도림 룸싸롱. All rights reserved.</p>
+ </div>
+ </footer>
 
-    <script>
-        function toggleMobileNav() {
-            const nav = document.getElementById('mobileNav');
-            nav.classList.toggle('active');
-        }
-    </script>
+ <script>
+ function toggleMobileNav() {
+ const nav = document.getElementById('mobileNav');
+ nav.classList.toggle('active');
+ }
+ </script>
 </body>
 </html>
