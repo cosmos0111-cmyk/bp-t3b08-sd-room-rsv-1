@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b08-sd-room-rsv-1</title>
+  <meta name="description" content="t3b08-sd-room-rsv-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sindorim-room-review.namanavi.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { scroll-behavior: smooth; font-size: 16px; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+ header { background: #1d1d1f; position: sticky; top: 0; z-index: 100; }
+ .header-inner { display: flex; justify-content: space-between; align-items: center; height: 64px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+ .logo { color: #fff; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.5px; }
+ .logo span { color: #ffd700; }
+ nav { display: flex; gap: 32px; align-items: center; }
+ nav a { color: #a1a1a6; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+ nav a:hover { color: #fff; }
+ .nav-cta { background: #ffd700; color: #1d1d1f; padding: 8px 20px; border-radius: 20px; font-weight: 600; transition: all 0.3s; }
+ .nav-cta:hover { background: #fff; color: #1d1d1f; }
+ .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+ .hamburger span { width: 24px; height: 2px; background: #fff; transition: 0.3s; }
+ .mobile-nav { display: none; }
+ @media (max-width: 768px) {
+ nav { display: none; }
+ .hamburger { display: flex; }
+ .mobile-nav { position: fixed; top: 64px; left: 0; width: 100%; background: #1d1d1f; flex-direction: column; padding: 20px; gap: 16px; z-index: 99; }
+ .mobile-nav a { color: #a1a1a6; text-decoration: none; font-size: 1rem; padding: 8px 0; }
+ .mobile-nav a.nav-cta { text-align: center; margin-top: 8px; }
+ .mobile-nav.active { display: flex; }
+ }
+ .info-section { padding: 80px 0; }
+ .info-section h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; letter-spacing: -0.5px; color: #1d1d1f; }
+ .info-section .subtitle { font-size: 1.1rem; color: #6e6e73; margin-bottom: 48px; line-height: 1.5; }
+ .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 64px; }
+ .info-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+ .info-card h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 16px; color: #1d1d1f; }
+ .info-card p { color: #6e6e73; font-size: 0.95rem; line-height: 1.7; }
+ .info-card ul { list-style: none; margin-top: 12px; }
+ .info-card ul li { padding: 6px 0; color: #6e6e73; font-size: 0.95rem; position: relative; padding-left: 16px; }
+ .info-card ul li::before { content: '•'; position: absolute; left: 0; color: #ffd700; }
+ .info-card .highlight { color: #ffd700; font-weight: 600; }
+ .spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px; }
+ .spec-item { background: #fff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+ .spec-item .number { font-size: 2rem; font-weight: 700; color: #ffd700; margin-bottom: 8px; }
+ .spec-item .label { font-size: 0.9rem; color: #6e6e73; }
+ .cta-banner { background: #1d1d1f; border-radius: 16px; padding: 48px; text-align: center; color: #fff; }
+ .cta-banner h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; }
+ .cta-banner p { color: #a1a1a6; font-size: 1rem; margin-bottom: 24px; }
+ .cta-banner .tel-link { display: inline-block; background: #ffd700; color: #1d1d1f; padding: 16px 48px; border-radius: 40px; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: all 0.3s; }
+ .cta-banner .tel-link:hover { background: #fff; transform: scale(1.02); }
+ footer { background: #1d1d1f; color: #a1a1a6; padding: 32px 0; text-align: center; font-size: 0.85rem; }
+ footer a { color: #ffd700; text-decoration: none; }
+ @media (max-width: 768px) {
+ .info-grid { grid-template-columns: 1fr; }
+ .spec-grid { grid-template-columns: 1fr; }
+ .cta-banner { padding: 32px 20px; }
+ .cta-banner h2 { font-size: 1.4rem; }
+ .info-section h1 { font-size: 1.8rem; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b08-sd-room-rsv-1">
+  <meta property="og:description" content="t3b08-sd-room-rsv-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sindorim-room-review.namanavi.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <div class="logo">신도림<span>룸싸롱</span></div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/facility">시설</a>
+ <a href="/reservation">예약</a>
+ <a href="/contact" class="nav-cta">문의</a>
+ </nav>
+ <div class="hamburger" onclick="toggleMobileNav()">
+ 
+ </div>
+ </div>
+ <div class="mobile-nav" id="mobileNav">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/facility">시설</a>
+ <a href="/reservation">예약</a>
+ <a href="/contact" class="nav-cta">문의</a>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0417.html">신도림 룸싸롱 예약 시 참고할 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">오랜만에 동창들과의 모임을 준비하며 장소를 물색하던 김 씨는 신도림 룸싸롱 예약 과정에서 큰 혼란을 겪었습니다. 단체 인원이 수용 가능한지, 분위기는 어떤지 구체적인 데이터를 찾기 어려웠기 때문입니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0418.html">신도림 룸싸롱 예약 과정에서 파악하는 구글 인덱싱 속도 초고속 광회선 대역폭 최적화</a>
+        <p class="post-item__summary">흔히 검색 엔진의 수집 활동이 단순히 서버의 성능에만 의존한다고 오해하는 경우가 많습니다. 특정 서비스나 장소에 대한 정보를 찾을 때 신도림 룸싸롱 예약 시스템과 같은 인프라 환경은 고도의 데이터 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0419.html">신도림 룸싸롱 예약 시 확인해야 할 구글 신뢰 지수 모발이식 솔루션의 도메인 파워 영향</a>
+        <p class="post-item__summary">웹사이트가 검색 엔진으로부터 높은 점수를 받기 위해서는 여러 가지 필수 충족 조건이 존재합니다. 사용자의 신뢰를 확보하고 체류 시간을 늘리는 콘텐츠의 질은 기본이며, 외부에서 들어오는 링크의 연결성</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0331.html">신도림 룸싸롱 예약 만큼 쉬운 망원 노래방 추천정보로 즐기는 법</a>
+        <p class="post-item__summary">성공적인 모임을 위한 노래방 선택에는 분명한 충족 조건이 필요합니다. 음향 시설의 품질, 공간의 쾌적함, 그리고 인원수에 적합한 방 크기가 조화를 이뤄야 하기 때문입니다. 신도림 룸싸롱 예약 과정을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0332.html">신도림 룸싸롱 예약 말고 홍대 노래방 추천정보 찾는 노하우 전수</a>
+        <p class="post-item__summary">여러분은 평소 홍대에서 노래방을 선택할 때 어떤 기준을 가지고 계신가요? 단순히 가까운 곳이나 눈에 띄는 화려한 간판만 보고 들어가는 경우가 많지 않은지 자문해 볼 필요가 있습니다. 신도림 룸싸롱 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0333.html">신도림 룸싸롱 예약 과정에서 확인하는 공덕 셔츠룸 추천정보 탐색법</a>
+        <p class="post-item__summary">많은 이들이 신도림 룸싸롱 예약 절차를 고민하며 다른 지역의 서비스 수준을 비교하곤 합니다. 특히 공덕 셔츠룸은 최근 젊은 층 사이에서 주목받는 문화 공간으로 자리 잡았습니다. 이러한 공간을 선택할</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0334.html">신도림 룸싸롱 예약 비교를 통해 살펴보는 연남 유흥 추천정보 가격 기준</a>
+        <p class="post-item__summary">신도림 룸싸롱 예약 방식을 알아보는 이용자들은 자연스럽게 타 지역의 유흥 시스템과 비용을 비교하게 됩니다. 연남 지역은 독특한 분위기와 다양한 문화가 공존하는 곳으로, 최근 유흥 관련 수요가 급증하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0335.html">신도림 룸싸롱 예약 시 흔히 발생하는 실패 사례와 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">신도림 룸싸롱 예약 과정을 거치다 보면 예상치 못한 문제로 일정을 망치는 경우가 종종 발생합니다. 특히 초보 이용자들은 예약 확인 절차를 간소화하다가 당일 현장에서 거절당하는 실수를 범하곤 합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0336.html">신도림 룸싸롱 예약 체크리스트로 확인하는 마곡 유흥 추천정보 접근성</a>
+        <p class="post-item__summary">신도림 룸싸롱 예약 및 이용 경험이 있는 분들은 위치가 갖는 중요성을 잘 알고 있을 것입니다. 특히 마곡 지역처럼 업무 지구와 인접한 곳은 대중교통 이용 편의성과 인근 인프라와의 접근성이 전체 경험</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0337.html">신도림 룸싸롱 예약 과정에서 고려해야 할 합정 노래방 추천정보</a>
+        <p class="post-item__summary">낯선 동료들과 갑작스럽게 퇴근 후 자리를 옮겨야 하는 상황이 발생하면 당혹스럽기 마련입니다. 특히 신도림 룸싸롱 예약 관련 키워드를 검색하다 보면 합정 지역의 유흥 정보를 찾는 경우가 많아 혼란이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0338.html">신도림 룸싸롱 예약 정보로 오해하기 쉬운 연남 클럽 추천정보</a>
+        <p class="post-item__summary">많은 이들이 연남동의 자유로운 분위기를 신도림 룸싸롱 예약 플랫폼에서 찾을 수 있는 폐쇄적인 업태와 혼동하곤 합니다. 하지만 이곳의 클럽 문화는 훨씬 개방적이며 누구나 즐길 수 있는 커뮤니티 성격이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0339.html">신도림 룸싸롱 예약 대신 살펴볼 합정 셔츠룸 추천정보</a>
+        <p class="post-item__summary">쾌적한 환경, 합리적인 비용, 그리고 적절한 접근성이 충족되면 어떤 모임이라도 성공적입니다. 신도림 룸싸롱 예약과 유사한 시스템을 고민하다가 결국 합정 지역의 특색 있는 문화를 찾는 분들이 많습니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0340.html">신도림 룸싸롱 예약 기준과 비교하는 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">여러분은 유흥 공간을 선택할 때 가장 중요하게 생각하는 요소가 무엇인가요? 신도림 룸싸롱 예약 사이트를 이용하며 시설의 노후도나 서비스의 질을 고민했던 경험이 공덕 지역의 업체를 찾을 때도 큰 도움</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0341.html">신도림 룸싸롱 예약 과정에서 살펴보는 상수 마사지 추천정보 활용법</a>
+        <p class="post-item__summary">신도림 룸싸롱 예약 절차를 진행하다 보면 다양한 정보를 취사선택해야 하는 상황이 발생합니다. 예약이라는 과정은 신뢰를 바탕으로 이루어지며, 이는 비단 유흥업소뿐만 아니라 건강을 관리하는 서비스 영역</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">신도림 룸싸롱 예약 안내</a>
+        <p class="post-item__summary">신도림 지역의 룸싸롱을 예약하려는 분들에게 사전 준비 사항과 참고해야 할 주요 사항에 대해 안내해 드리고자 합니다. 예약을 진행하기 위해서는 각 업소마다 상이한 절차와 정책을 준수해야 하므로, 사전</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">신도림 룸싸롱 예약</a>
+        <p class="post-item__summary">신도림 지역에서 룸싸롱 예약을 계획하시는 경우, 원활한 정보 검색을 위해 안정적인 인터넷 환경이 필요합니다. 온라인으로 예약 정보를 찾아보실 때 연결 속도가 느리면 여러 페이지를 열어보는 과정에서 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">신도림 룸싸롱 예약 안내</a>
+        <p class="post-item__summary">신도림 지역에서 룸싸롱을 이용할 때 가장 중요한 것은 정확한 예약 절차와 신뢰할 수 있는 정보원 확보입니다. 많은 사람들이 원하는 분위기나 서비스를 찾기 위해 다양한 채널을 탐색하지만, 이 과정에서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">신도림 룸싸롱 예약 정보</a>
+        <p class="post-item__summary">신도림 지역의 룸싸롱에 대한 예약 정보를 찾고 계신가요. 신도림은 서울특별시 영등포구에 위치한 대형 환승역 권역으로, 교통 접근성이 뛰어나고 다양한 숙박·유흥 시설이 밀집해 있는 지역입니다. 룸싸롱</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">신도림 룸싸롱 예약 안내</a>
+        <p class="post-item__summary">신도림 지역에서 룸싸롱 예약을 고려 중이시라면, 몇 가지 기본적인 사항을 미리 숙지하는 것이 중요합니다. 신도림은 다양한 업소가 밀집해 있어 선택의 폭이 넓으므로, 방문 목적과 취향에 맞는 곳을 현</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-001-mdmu4l.html">형님, 월매출 3 천만 원 찍고도 도산하신 신도림 룸싸롱 예약의 진실</a>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
